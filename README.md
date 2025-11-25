@@ -8,6 +8,7 @@ The main goal is to understand the logic of C programs and get familiar with Jav
 - `c_code/` - Folder containing original C programs.
 - `js_code/` - Folder containing translated JavaScript programs.
 - `README.md` - Project description and documentation.
+- `Dockerfile` - Docker configuration for development environment.
 
 ## Objectives
 
@@ -16,24 +17,24 @@ The main goal is to understand the logic of C programs and get familiar with Jav
 3. Compare the differences and similarities between C and JavaScript.
 4. Build familiarity with JavaScript syntax and behavior using C logic as reference.
 
+## Requirements / Dependencies
 
-## bulid and run Dockerfile
+To compile and run programs in this repository you need:
+
+- **GCC** (for C programs)
+- **GDB** (optional, for debugging C programs)
+- **Java JDK 17+** (for Java programs)
+- **Node.js** (for running JavaScript programs)
+- **Docker** (optional, recommended for a reproducible development environment)
+
+> If you use Docker, all dependencies are installed automatically.
+
+## Build and Run Docker Container
+
 ```bash
-1. docker build -t [name]
-2. docker run -it -v $(pwd):/workspace [name]
+# Build the Docker image
+docker build -t cs50-dev .
+
+# Run the container interactively, mounting current folder
+docker run -it -v $(pwd):/workspace cs50-dev
 ```
-
-
-## How to Use
-
-1. Add your C program in the `c_code/` folder.
-2. Translate the program into JavaScript and place it in `js_code/`.
-3. Test the JavaScript program using Node.js or a browser console.
-
-## Notes
-
-- Focus on simple, beginner-level programs at first.
-- Keep C logic intact while translating to JavaScript.
-- Experiment with different JS features to see how C concepts map to JavaScript.
-
-#from-c-to-js
