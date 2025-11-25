@@ -18,8 +18,10 @@ The main goal is to understand the logic of C programs and get familiar with Jav
 
 
 ## bulid and run Dockerfile
+```bash
 1. docker build -t [name]
 2. docker run -it -v $(pwd):/workspace [name]
+```
 
 
 ## How to Use
