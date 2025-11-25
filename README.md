@@ -16,6 +16,12 @@ The main goal is to understand the logic of C programs and get familiar with Jav
 3. Compare the differences and similarities between C and JavaScript.
 4. Build familiarity with JavaScript syntax and behavior using C logic as reference.
 
+
+## bulid and run Dockerfile
+1. docker build -t [name]
+2. docker run -it -v $(pwd):/workspace [name]
+
+
 ## How to Use
 
 1. Add your C program in the `c_code/` folder.
