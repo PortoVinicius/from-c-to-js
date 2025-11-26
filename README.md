@@ -33,8 +33,8 @@ To compile and run programs in this repository you need:
 
 ```bash
 # Build the Docker image
-docker build -t cs50-dev .
+docker build -t from-c-to-js .
 
 # Run the container interactively, mounting current folder
-docker run -it -v $(pwd):/workspace cs50-dev
+docker run -it -v $(pwd):/workspace from-c-to-js
 ```
