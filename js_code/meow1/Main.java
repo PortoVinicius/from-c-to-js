@@ -3,25 +3,17 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-
-        int n = 0;
-
-        // repeat until n >= 0
-        while (true) {
-            System.out.print("whats's n? ");
+        int n;
+        
+        // Repete até receber um número não negativo
+        do {
+            System.out.print("numero: ");
             n = scanner.nextInt();
+        } while (n < 0);
 
-            if (n < 0){
-                continue;
-            }
-            else {
-                break;
-            }
-        }
-
+        // Imprime "meow" n vezes
         for (int i = 0; i < n; i++) {
             System.out.println("meow");
-
         }
 
         scanner.close();
