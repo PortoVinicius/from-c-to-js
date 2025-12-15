@@ -8,7 +8,7 @@ int main(int argc, char *argv[]) {
     }
     
     // tenta abrir o arquivo
-    FILE *file = fopen("teste.txt", "r");
+    FILE *file = fopen(argv[1], "r");
 
     // Check se der erro
     if (file == NULL) {
