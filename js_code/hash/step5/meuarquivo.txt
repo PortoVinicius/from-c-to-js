@@ -1,0 +1,5 @@
+Olá, mundo!
+Este é um arquivo de teste.
+Vamos testar a leitura linha por linha.
+A terceira linha tem mais texto.
+Obrigado por testar!
